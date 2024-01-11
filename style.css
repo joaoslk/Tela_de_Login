@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+:root
+{
+    --color-light-50: #f8fafc;
+
+    --color-dark-50:  #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000000;
+
+    --color-purple-50: #7c3aed;
+    --color-purple-100: #a855f7;
+    --color-purple-200: #bf46ef;
+
+    /* Gradient */
+
+    --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
+}
+
+header{
+    background: var(--color-gradient);
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: var(--color-light-50);
+}
+
+.navigation a:hover{
+    transition: 0.6s;
+    color: var(--color-dark-900);
+}
+
+.title-div{
+    align-items: center;
+}
+
+.title-div h1{
+    color: var(--color-light-50);
+    cursor: pointer;
+}
+
+.navigation ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+.navigation .btn {
+    display: flex;
+    align-items: center;
+}
+
+.navigation .btn button {
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.navigation .btn button:hover{
+    transition: 0.6s;
+    background: #000000;
+    color: white;
+}
+
+.container
+{
+    height: 100vh;
+    width: 100%;
+    background: var(--color-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#login_form
+{
+    background: var(--color-light-50);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 8px;
+    gap: 30px;
+    box-shadow: 5px 5px 8px  rgba(0, 0, 0, 0.336);
+    height: fit-content;
+}
+
+#social_midia{
+    display: flex;
+    justify-content: space-around;
+}
+
+#social_midia a
+{
+    text-decoration: none;
+    color: var(--color-dark-900);
+    font-size: 30px;
+}
+
+#social_midia a:hover
+{   
+    transform: scale(1.2);
+    transition: 0.6s;
+    color: var(--color-purple-200);
+}
+
+#form_header
+{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+#form_header h1
+{
+    font-size: 40px;
+    position: relative;
+}
+
+/* #form_header h1::before
+{
+    position: absolute;
+    content: '';
+    width: 40%;
+    background-color: var(--color-purple-50);
+    height: 3px;
+    bottom: 10px;
+    border-radius: 5px;
+} */
+
+#form_header i {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#form_header i:hover {
+    transform: scale(1.2);
+    transition: 0.4s;
+    color: var(--color-dark-50);
+}
+#form_header h1:hover
+{
+    transition: 0.7s;
+    color: var(--color-purple-50);
+    cursor: pointer;
+}
+
+#inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#inputs a{
+    text-decoration: none;
+}
+.input-box label{
+    font-size: 14px;
+    color: var(--color-dark-50);
+}
+
+.input-field input {
+   border: none;
+   background-color: transparent;
+   width: 260px;
+   font-size: 20px;
+   color: var(--color-dark-900);
+   padding: 0px 5px;
+}
+
+.input-field input:focus {
+    outline: none;
+ }
+ 
+
+.btn-login .login_button{
+    width: 280px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-dark-900);
+    color: white;
+    height: 30px;
+    cursor: pointer; 
+}
+
+.btn-login .login_button:hover{
+    transition: 0.6s;
+    background-color: var(--color-dark-100);
+
+}
+/* 
+read about justify-content and events
+read about position
+search know gap
+seach about transform
+*/
+
+#forgot_password {
+    padding: 5px;
+}
+
+.dark#login_form {
+    background-color: var(--color-dark-100);
+    color: var(--color-light-50);
+}
+
+.dark#login_form .input-field input,
+.dark#login_form .input-field i
+{
+    color: var(--color-light-50);
+}
+
+.dark#login_form #social_midia a{
+    color: var(--color-light-50);
+}
+
+.dark#login_form .btn-login .login_button{
+    color: var(--color-dark-900);
+    background-color: var(--color-light-50);
+}
+
+.dark#login_form .btn-login .login_button:hover{
+    transition: 0.6s;
+    background-color: var(--color-dark-50);
+}
